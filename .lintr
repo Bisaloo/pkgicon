@@ -1,0 +1,27 @@
+linters: all_linters(
+    packages = c("lifecycle", "lintr"),
+    pipe_consistency_linter(pipe = "|>"),
+    object_name_linter = NULL,
+    implicit_integer_linter = NULL,
+    todo_comment_linter = NULL,
+    library_call_linter = NULL,
+    undesirable_function_linter(
+      modify_defaults(
+        default_undesirable_functions,
+        library = NULL # too many false positive in too many files
+      )
+    ),
+    undesirable_operator_linter = NULL,
+    function_argument_linter = NULL,
+    one_call_pipe_linter = NULL,
+    object_overwrite_linter = NULL,
+    backport_linter("oldrel-4")
+  )
+exclusions: list(
+    "tests/testthat.R" = list(
+      unused_import_linter = Inf
+    ),
+    "tests" = list(
+      undesirable_function_linter = Inf
+    )
+  )

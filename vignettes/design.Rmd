@@ -1,0 +1,13 @@
+---
+title: "Design principles for pkgicon"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{design}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Dependencies
+
+- All dependencies from pkgdown are fair game because users are expected to use
+  pkgdown later.
