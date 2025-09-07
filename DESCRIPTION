@@ -19,7 +19,9 @@ Imports:
     pkgdown,
     rsvg,
     whisker
-Suggests: 
+Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://hugogruson.fr/pkgicon/, https://github.com/Bisaloo/pkgicon
+BugReports: https://github.com/Bisaloo/pkgicon/issues
