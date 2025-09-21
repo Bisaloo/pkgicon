@@ -110,6 +110,6 @@ build_pkgdown_favicons <- function(pkg = ".", overwrite = FALSE) {
     pretty = TRUE
   )
 
-  cli::cli_inform(c(v = "Added {.path {sort(path_file(paths))}}."))
+  cli::cli_inform(c(v = "Added logos to {.path {out_path}}."))
   invisible()
 }
